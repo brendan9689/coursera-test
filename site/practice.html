@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Practice</title>
+
+<style>
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+}
+
+h3.top {
+  width: 30%;
+  padding-left: 1px;
+  margin-left: 1px;
+  float: right;
+  font-style: italic;
+}
+
+
+
+</style>
+
+</head>
+<body>
+	<div>
+		<h1>This is a practice File/Web Page</h1>
+</div>
+<section id="content">
+	<!-- Link to every section in the page -->
+	<h3>Table of Content</h3>
+	<ul>
+		<li><a href="#sc1">Ch1 - Lists</a></li>
+		<li><a href="#sc2">Ch2 - Character Entity Reference</a></li>
+		<li><a href="#sc3">Ch3 - HTML Block and Inline Elements</a></li>
+		<li><a href="#sc4">Ch4 - Types of Important tags</a></li>
+	</ul>
+</section>
+
+	<section id="sc1">
+			<h2>Types of list</h2>
+			<h2>1. Unordered Lists</h2>
+				<ul>
+					<li>Example1</li>
+					<li>Example1</li>
+				</ul>
+			<h2>2. Ordered Lists</h2>
+				<ol>
+					<li>Example1</li>
+					<li>Example2</li>
+				</ol>
+	</section>
+
+<hr>
+<div>
+	<h2>Character Entity Reference</h2>
+	<p class="text"> This is an Example Test with the 3 most Important Characters:</p>
+	<aside>
+		<h3 class="top"><a href="#content">Back to Top</a></h3>
+	</aside>
+		<ul>
+			<li>The &lt; (Less Than) Character - <code>&amp;lt;</code></li>
+			<li>The &gt; (Greater Than) Character - <code>&amp;gt;</code></li>
+			<li>The &amp; (ampersand) Character - <code>&amp;amp;</code></li>
+		</ul>
+	<br>
+	<p>The other less known speacial characters are:</p>
+	<ul>
+		<li>The &copy; (Copyright) Character - <code>&amp;copy;</code></li>
+		<li>The &quot; (Quotes) Character - <code>&amp;quot;</code></li>
+		<li>The <code>&amp;nbsp;</code> is used to add space betweer words but prevents it&nbsp;to&nbsp;wrap&nbsp;the&nbsp;text in the event of browser&nbsp;resizing</li>
+	</ul>
+</div>
+
+<hr>
+<section id="sc3">
+<h2>HTML Block and Inline Elements</h2>
+<h2>Block-level Elements</h2>
+<p>A block-level element always starts on a new line, and the browsers automatically add some space (a margin) before and after the element.
+<br>
+Two commonly used block elements are: <code>&lt;p&gt;</code> and <code>&lt;div&gt;</code>
+<br><br>
+Here are the block-level elements in HTML:
+</p>
+	<ul>
+		<li>address</li>
+		<li>article</li>
+		<li>aside</li>
+		<li>blockquote</li>
+		<li>canvas</li>
+		<li>dd</li>
+		<li>div</li>
+		<li>dl</li>
+		<li>dt</li>
+		<li>fieldset</li>
+		<li>figcaption</li>
+		<li>figure</li>
+		<li>footer</li>
+		<li>form</li>
+		<li>h1-h6</li>
+		<li>header</li>
+		<li>hr</li>
+		<li>li</li>
+		<li>main</li>
+		<li>nav</li>
+		<li>noscript</li>
+		<li>ol / ul</li>
+		<li>p</li>
+		<li>pre</li>
+		<li>section</li>
+		<li>table</li>
+		<li>tfoot</li>
+		<li>video</li>
+	</ul>
+	<p>
+		A <code>&lt;p&gt;</code> element cannot contain block-level elements like <code>&lt;ul&gt;</code>, <code>&lt;div&gt;</code>, or another <code>&lt;p&gt;</code> — it’s meant only for inline content (text, <code>&lt;a&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;b&gt;</code>, etc.).
+	</p>
+</section>
+
+<h2>Inline Elements</h2>
+<p>
+An inline element does not start on a new line.
+<br><br>
+Here are the inline elements in HTML:
+</p>
+	<ul>
+		<li>a</li>
+		<li>abbr</li>
+		<li>acronym</li>
+		<li>b</li>
+		<li>bdo</li>
+		<li>big</li>
+		<li>br</li>
+		<li>button</li>
+		<li>cite</li>
+		<li>code</li>
+		<li>dfn</li>
+		<li>em</li>
+		<li>i</li>
+		<li>img</li>
+		<li>input</li>
+		<li>kbd</li>
+		<li>label</li>
+		<li>map</li>
+		<li>object</li>
+		<li>output</li>
+		<li>q</li>
+		<li>samp</li>
+		<li>script</li>
+		<li>select</li>
+		<li>small</li>
+		<li>span</li>
+		<li>strong</li>
+		<li>sub</li>
+		<li>sup</li>
+		<li>textarea</li>
+		<li>time</li>
+		<li>tt</li>
+		<li>var</li>
+	</ul>
+	<p><b>Note:</b> An inline element cannot contain a block-level element!</p>
+
+<hr>
+<section id="sc4">
+<h2>
+	Types of Important tags
+</h2>
+<ol>
+	<li>
+	<h3>&lt;div&gt;</h3>
+
+	<ul>
+	<li>The &lt;div&gt; tag defines a division or a section in an HTML document.</li>
+	<li>The &lt;div&gt; tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.</li>
+	<li>It is a non-semantic element, meaning it does not describe the content it contains to browsers or assistive technologies.</li>
+	<li>The &lt;div&gt; tag is easily styled by using the class or id attribute.</li>
+	<li>Any sort of content can be put inside the &lt;div&gt; tag!</li>
+	</ul>
+	
+	<p><b>Note:</b> By default, browsers always place a line break before and after the &lt;div&gt; element.</p>
+	</li>	
+
+	<li>
+	<h3>&lt;span&gt;</h3>
+	<ul>
+		<li>
+	The &lt;span&gt; element is an inline container used to mark up a part of a text, or a part of a document.
+		</li>
+		<li>
+	The &lt;span&gt; element has no required attributes, but style, class and id are common.
+		</li>
+		<li>
+	When used together with CSS, the &lt;span&gt; element can be used to style parts of the text.
+		</li>
+	</ul>
+	<p>
+	<b>Example:</b>
+	<code>&lt;p&gt;</code>My mother has <code>&lt;span style="color:blue;font-weight:bold;"></code>blue<code>&lt;/span&gt;</code> eyes and my father has <code>&lt;span style="color:darkolivegreen;font-weight:bold;"&gt;</code>dark green<code>&lt;/span&gt;</code> eyes.<code>&lt;/p&gt;</code>
+	<br>
+	My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.
+	</p>
+	</li>
+
+	<li>
+		<h3>&lt;section&gt;</h3>
+	<ul>
+		<li>
+	The &lt;section&gt; e tag defines a section in a document.
+		</li>
+		<li>
+	This is a semantic element that represents a standalone section of a web page with a distinct topic or purpose.
+		</li>
+		<li>
+	It provides semantic meaning to the content, indicating that the elements within it are related and form a cohesive unit. This benefits search engines and screen readers, improving accessibility and SEO.
+		</li>
+		<li>
+	A general rule of thumb is that a <code>&lt;section&gt;</code> is appropriate if its content would be listed explicitly in the document's outline (e.g., in a table of contents). 
+		</li>
+	</ul>
+	<p>
+		Examples of where a <code>&lt;section&gt;</code> element can be used:
+	</p>
+	<ul>
+		<li>Chapters</li>
+		<li>Introduction</li>
+		<li>News items</li>
+		<li>Contact information</li>
+	</ul>
+	</li>
+</ol>
+</section>
+<hr>
+<section id="sc5">
+<h2>
+	Semantic Elements in HTML
+</h2>
+<p>
+	Many web sites contain HTML code like: <code>&lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt;</code> to indicate navigation, header, and footer.
+<br>
+In HTML there are several semantic elements that can be used to define different parts of a web page: 
+</p>
+<aside>
+	<img src="https://www.w3schools.com/html/img_sem_elements.gif" alt="Semantic Elements - Page Layout" width="250" height="250">
+</aside>
+<ol>
+	<li><code>&lt;article&gt;</code></li>
+	<li><code>&lt;aside&gt;</code></li>
+	<li><code>&lt;details&gt;</code></li>
+	<li><code>&lt;figcaption&gt;</code></li>
+	<li><code>&lt;figure&gt;</code></li>
+	<li><code>&lt;footer&gt;</code></li>
+	<li><code>&lt;header&gt;</code></li>
+	<li><code>&lt;main&gt;</code></li>
+	<li><code>&lt;mark&gt;</code></li>
+	<li><code>&lt;nav&gt;</code></li>
+	<li><code>&lt;section&gt;</code></li>
+	<li><code>&lt;summary&gt;</code></li>
+	<li><code>&lt;time&gt;</code></li>
+</ol>
+<p>Guide: <a href="https://www.w3schools.com/html/html5_semantic_elements.asp#gsc.tab=0&gsc.q=alt%20text" target="_blank"> W3schools&gt;Semantic Elements</a>
+</p>
+</section>
+
+<hr>
+<section id="sc6">
+	<h2>Class & Name Attribute</h2>
+	<h3>class Attribute</h3>
+	<ul>
+		<li><b>Purpose:</b> The class attribute is used to group multiple HTML elements that share common styling or behavior.</li>
+		<li><b>Uniqueness:</b> A class name can be applied to multiple elements on a single page, and a single element can have multiple classes (separated by spaces).</li>
+	</ul>
+	<h3>name Attribute</h3>
+	<ul>
+		<li><b>Purpose:</b> The name attribute is primarily used with form elements (like <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code>) to identify the data submitted to a server.	</li>
+		<li><b>Uniqueness:</b> Unlike id, the name attribute is not required to be unique across the entire page, especially within a form where multiple elements might share the same name (e.g., radio buttons).</li>
+	</ul>
+	<h4>In Summary:</h4>
+<p>
+	<u>class:</u> is for styling and grouping elements based on shared characteristics. <a href="https://www.w3schools.com/html/html_classes.asp">More Info</a>
+<br>
+<u>name:</u> is for identifying form data when submitted to a server and for grouping related form controls. <a href="https://www.w3schools.com/tags/att_name.asp">More Info</a>
+</p>
+</section>
+
+<hr>
+<section id="sc7">
+	<h2>Flow & Phrasing Content</h2>
+	<h3>Flow content</h3>
+	<ul>
+		<li><b>Purpose:</b> To create the overall layout and structure of a document.</li>
+		<li><b>What it is:</b> The broader category of HTML content that forms the main structure of a page.</li>
+		<li><strong>Examples:</strong>
+		<ul>
+			<li>Paragraphs (<code>&lt;p&gt;</code>)</li>
+			<li>Headings (<code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>) </li>
+			<li>Sections (<code>&lt;section&gt;</code>)</li>
+			<li>Articles (<code>&lt;article&gt;</code>) </li>
+			<li>Tables (<code>&lt;table&gt;</code>) </li>
+			<li>Generic containers (<code>&lt;div&gt;</code>) </li>
+		</ul>
+		</li>
+	</ul>
+	<h3>Phrasing content</h3>
+	<ul>
+		<li><b>Purpose:</b>To define the meaning and formatting of the text itself. </li>
+		<li><b>What it is:</b> A subset of flow content that focuses on text and its inline semantics.</li>
+		<li><strong>Examples:</strong>
+		<ul>
+			<li>Text and inline formatting tags like <code>&lt;b&gt;</code> and <code>&lt;i&gt;</code></li>
+			<li>Images (<code>&lt;img&gt;</code>) </li>
+			<li>Links (<code>&lt;a&gt;</code>)</li>
+			<li>Articles (<code>&lt;article&gt;</code>) </li>
+			<li><code>&lt;span&gt;</code></li>
+			<li><code>&lt;em&gt;</code></li>
+		</ul>
+		</li>
+	</ul>
+</section>
+
+<hr>
+<section id="sc8">
+	<h2>Additional Info</h2>
+	<ol>
+		<li><b>Chrome Developer Tools</b>
+			<p>Shortcut - ctrl + alt + i</p>
+			</li>
+		<li><b>Image Tag</b>
+			<p><code>&lt;img src=&quot;<i><u>(Destination file/URL)</u></i>&quot; width=&quot;___&quot; height=&quot;___&quot; alt=&quot;<i><u>(Describe Image)</u></i>&quot;&gt;</code></p>
+			</li>
+	</ol>
+</section>
+
+</body>
+</html>
